@@ -2,6 +2,12 @@
 
 abstract class Controller
 {
+    public function render($template, $args = []){
+        $args += array(
+            'title' => 'Home',
+        );
+        echo TwigView::getTwig()->render($template, $args);
+    }
 
     public function getConnection(){
         $config = \Doctrine\ORM\Tools\Setup::createConfiguration(false);
@@ -10,19 +16,12 @@ abstract class Controller
         $config->setMetadataDriverImpl($driverImpl);
         $connectionOptions = array(
             'driver'   => 'pdo_mysql',
-            'user'     => 'grupo7',
-            'password' => 'thie9Ahba9',
-            'dbname'   => 'grupo7',
+            'user'     => 'root',
+            'password' => 'root',
+            'dbname'   => 'my_project',
         );
 
         $em = \Doctrine\ORM\EntityManager::create($connectionOptions, $config);
         return $em;
-    }
-
-    public function render($template, $args = []){
-        $args += array(
-            'title' => 'Home',
-        );
-        echo TwigView::getTwig()->render($template, $args);
     }
 }

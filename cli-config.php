@@ -10,9 +10,9 @@ $isDevMode = false;
 // the connection configuration
 $dbParams = array(
     'driver'  => 'pdo_mysql',
-    'user'   => 'grupo7',
-    'password' => 'thie9Ahba9',
-    'dbname'  => 'grupo7',
+    'user'   => 'root',
+    'password' => 'root',
+    'dbname'  => 'my_project',
 );
 
 // Any way to access the EntityManager from your application

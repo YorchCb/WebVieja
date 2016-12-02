@@ -101,7 +101,7 @@ class ClassMetadataBuilder
     }
 
     /**
-     * Sets custom repository class name.
+     * Sets custom Repository class name.
      *
      * @param string $repositoryClassName
      *

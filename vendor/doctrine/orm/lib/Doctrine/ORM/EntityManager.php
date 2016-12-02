@@ -32,7 +32,7 @@ use Doctrine\Common\Util\ClassUtils;
  * The EntityManager is the central access point to ORM functionality.
  *
  * It is a facade to all different ORM subsystems such as UnitOfWork,
- * Query Language and repository API. Instantiation is done through
+ * Query Language and Repository API. Instantiation is done through
  * the static create() method. The quickest way to obtain a fully
  * configured EntityManager is:
  *

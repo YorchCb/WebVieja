@@ -291,14 +291,14 @@ class ClassMetadataInfo implements ClassMetadata
     public $embeddedClasses = array();
 
     /**
-     * READ-ONLY: The named queries allowed to be called directly from repository.
+     * READ-ONLY: The named queries allowed to be called directly from Repository.
      *
      * @var array
      */
     public $namedQueries = array();
 
     /**
-     * READ-ONLY: The named native queries allowed to be called directly from repository.
+     * READ-ONLY: The named native queries allowed to be called directly from Repository.
      *
      * A native SQL named query definition has the following structure:
      * <pre>
