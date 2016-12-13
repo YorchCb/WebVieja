@@ -12,16 +12,11 @@ require_once 'repository/PDORepository.php';
 require_once 'view/TwigView.php';
 
 if(isset($_GET['action']) and $_GET['action'] != 'home') {
+    if($_GET['action'] == 'login'){
+        HomeController::getInstance()->login();
+    }elseif($_GET['action'] == 'bt1'){
+        HomeController::getInstance()->bt1();
+    }
 }else{
     HomeController::getInstance()->home();
-}
-
-if(isset($_GET['action']) and $_GET['action'] != 'login') {
-}else{
-    HomeController::getInstance()->login();
-}
-
-if(isset($_GET['action']) and $_GET['action'] != 'bt1') {
-}else{
-    HomeController::getInstance()->bt1();
 }
