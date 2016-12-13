@@ -15,3 +15,13 @@ if(isset($_GET['action']) and $_GET['action'] != 'home') {
 }else{
     HomeController::getInstance()->home();
 }
+
+if(isset($_GET['action']) and $_GET['action'] != 'login') {
+}else{
+    HomeController::getInstance()->login();
+}
+
+if(isset($_GET['action']) and $_GET['action'] != 'bt1') {
+}else{
+    HomeController::getInstance()->bt1();
+}

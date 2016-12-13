@@ -17,7 +17,7 @@ abstract class Controller
         $connectionOptions = array(
             'driver'   => 'pdo_mysql',
             'user'     => 'root',
-            'password' => 'root',
+            'password' => '',
             'dbname'   => 'my_project',
         );
 
