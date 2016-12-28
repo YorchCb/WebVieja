@@ -24,18 +24,11 @@ class HomeController extends Controller
     }
 
     public function home(){
-        $this->render('home.html.twig');
+        $this->render('home.php.twig');
+    }
+    
+    public function logout(){
+        $this->render('app/logout.php');
     }
 	
-	public function login(){
-        $this->render('login.html.twig');
-    }
-	
-	public function bt1(){
-        $this->render('bt1.html.twig');
-    }
-	
-	public function error(){
-        $this->render('error.html.twig');
-    }
 }

@@ -1,6 +1,6 @@
 <?php
 //Include FB config file
-require_once 'app/fbConfig.php';
+require_once 'fbConfig.php';
 
 //Unset user data from session
 unset($_SESSION['userData']);
@@ -10,4 +10,5 @@ $facebook->destroySession();
 
 //Redirect to homepage
 header("Location:index.php");
+
 ?>

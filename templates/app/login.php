@@ -1,12 +1,12 @@
 <?php
 //Include FB config file && User class
-require_once 'app/fbConfig.php';
-require_once 'app/User.php';
+require_once 'fbConfig.php';
+require_once 'User.php';
 
 if(!$fbUser){
 	$fbUser = NULL;
 	$loginURL = $facebook->getLoginUrl(array('redirect_uri'=>$redirectURL,'scope'=>$fbPermissions));
-	$output = '<a href="'.$loginURL.'"><img src="images/fblogin-btn.png"></a>'; 	
+	$output = '<a href="'.$loginURL.'">Logearse con Facebook</a>'; 	
 }else{
 	//Get user profile data from facebook
 	$fbUserProfile = $facebook->api('/me?fields=id,first_name,last_name,email,link,gender,locale,picture');
@@ -42,7 +42,7 @@ if(!$fbUser){
         $output .= '<br/>Locale : ' . $userData['locale'];
         $output .= '<br/>Logged in with : Facebook';
 		$output .= '<br/><a href="'.$userData['link'].'" target="_blank">Click to Visit Facebook Page</a>';
-        $output .= '<br/>Logout from <a href="logout.php">Facebook</a>'; 
+        $output .= '<br/>Logout from <a href="app/logout.php">Facebook</a>'; 
 	}else{
 		$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
 	}
