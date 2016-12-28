@@ -21,11 +21,11 @@
 						<br>
 					</section>
 					<section id="Menu" class="col-xs-12">
-							<a href=""> ¿Quiénes somos? </a> /
-							<a href="./?action=qs"> Lista de eventos </a> /
-							<a href="https://www.youtube.com" target="_blank"> YouTube </a> /
-							<a href="./?action=razer"> RazerComms </a> /
-							{% include ('menu_session.php.twig') %}
+						<a href=""> ¿Quiénes somos? </a> /
+						<a href="./?action=qs"> Lista de eventos </a> /
+						<a href="https://www.youtube.com" target="_blank"> YouTube </a> /
+						<a href="./?action=razer"> RazerComms </a> /
+						{% include ('menu_session.php') %}
 					</section>
 			</header>
 					<section id="Juegos">
@@ -40,6 +40,7 @@
 						</article>			
 						<article id="GtaV" class="col-xs-12 col-sm- col-md- col-lg-6">
 							<a href="./?action=gtav.html"> <img src="images/GtaV.jpg" class="img-responsive"> </a>
+							<br>
 						</article>
 						<article id="Proximamente" class="col-xs- col-sm- col-md- col-lg-6">
 							<a href=""> <img src="images/Proximamente.jpg" class="img-responsive"> </a>
@@ -50,7 +51,7 @@
 			<script scr="js/bootstrap.min.js"></script>
 		</body>
 		<footer class="col-xs-12">
-				{% include ('footer.php.twig') %} 
+			{% include ('footer.php.twig') %} 
 		</footer>
 	</div>
 </html>
