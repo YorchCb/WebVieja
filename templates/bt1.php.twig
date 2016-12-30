@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Battlefield 1</title>
+		{% include ('head.php') %}
+	</head>
+	 <div class="container">
+	 	<body>
+			<header>
+				<section class="main row">
+					<section id="Top" class="col-xs-12">
+						<br>
+					</section>
+					<section id="Menu" class="col-xs-12">
+						<a href="./?action=home"> Inicio </a> /
+						<a href=""> ¿Quiénes somos? </a> /
+						<a href="./?action=qs"> Lista de eventos </a> /
+						<a href="https://www.youtube.com" target="_blank"> YouTube </a> /
+						<a href="./?action=razer"> RazerComms </a> /
+						{% include ('menu_session.php') %}
+					</section>
+			</header>
+				BAJO CONSTRUCCIÓN
+				{% include ('endbody.php') %}
+		</body>
+		<footer class="col-xs-12">
+			{% include ('footer.php.twig') %} 
+		</footer>
+	</div>
+</html>

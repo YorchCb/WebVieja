@@ -2,14 +2,7 @@
 <html lang="es">
 	<head>
 		<title>Home</title>
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0; maxium-scale=1.0, minium-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<script type="text/javascript">
-			document.oncontextmenu = function(){return false;}
-    	</script>
+		{% include ('head.php') %}
 	</head>
 	 <div class="container">
 	 	<body>
@@ -35,20 +28,19 @@
 							<br>
 						</article>
 						<article id="Bt4" class="col-xs-12 col-sm- col-md- col-lg-6">
-							<a href="./?action=bt4.html"> <img src="images/Battlefield4.jpg" class="img-responsive"> </a>
+							<a href="./?action=bt4"> <img src="images/Battlefield4.jpg" class="img-responsive"> </a>
 							<br>
 						</article>			
 						<article id="GtaV" class="col-xs-12 col-sm- col-md- col-lg-6">
-							<a href="./?action=gtav.html"> <img src="images/GtaV.jpg" class="img-responsive"> </a>
+							<a href="./?action=gtav"> <img src="images/GtaV.jpg" class="img-responsive"> </a>
 							<br>
 						</article>
 						<article id="Proximamente" class="col-xs- col-sm- col-md- col-lg-6">
-							<a href=""> <img src="images/Proximamente.jpg" class="img-responsive"> </a>
+							<img src="images/Proximamente.jpg" class="img-responsive">
 							<br>
 						</article>
 				</section>
-			<script scr="js/jQuery.js"></script>
-			<script scr="js/bootstrap.min.js"></script>
+				{% include ('endbody.php') %}
 		</body>
 		<footer class="col-xs-12">
 			{% include ('footer.php.twig') %} 

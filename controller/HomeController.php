@@ -30,5 +30,16 @@ class HomeController extends Controller
     public function logout(){
         $this->render('app/logout.php');
     }
-	
+
+    public function bt1(){
+        $this->render('bt1.php.twig');
+	}
+
+    public function bt4(){
+        $this->render('bt4.php.twig');
+    }
+
+    public function gtav(){
+        $this->render('gtav.php.twig');
+    }
 }
