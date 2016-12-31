@@ -9,7 +9,7 @@ require_once 'inc/facebook.php';
  */
 $appId = '1197905113621557'; //Facebook App ID
 $appSecret = '02e235519eecc0bee33e184407ec9b9c'; // Facebook App Secret
-$redirectURL = 'http://localhost/WebNueva/'; // Callback URL
+$redirectURL = 'http://localhost/'; // Callback URL
 $fbPermissions = 'email';  //Required facebook permissions
 
 //Call Facebook API
