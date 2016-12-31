@@ -1,9 +1,9 @@
 <?php
 class User {
-	private $dbHost     = "localhost";
+	private $dbHost     = "127.0.0.1";
     private $dbUsername = "root";
     private $dbPassword = "";
-    private $dbName     = "database";
+    private $dbName     = "eventos_coordinados";
 	private $userTbl    = 'users';
 	
 	function __construct(){

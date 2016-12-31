@@ -24,7 +24,8 @@ if(!$fbUser){
 		'gender' 		=> $fbUserProfile['gender'],
 		'locale' 		=> $fbUserProfile['locale'],
 		'picture' 		=> $fbUserProfile['picture']['data']['url'],
-		'link' 			=> $fbUserProfile['link']
+		'link' 			=> $fbUserProfile['link'],
+		'privilegios'=> 0
 	);
 	$userData = $user->checkUser($fbUserData);
 	

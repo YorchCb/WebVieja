@@ -26,6 +26,10 @@ class HomeController extends Controller
     public function home(){
         $this->render('home.php.twig');
     }
+
+     public function login(){
+        $this->render('login.php');
+    }
     
     public function logout(){
         $this->render('app/logout.php');
@@ -42,4 +46,5 @@ class HomeController extends Controller
     public function gtav(){
         $this->render('gtav.php.twig');
     }
+
 }
