@@ -6,4 +6,10 @@ footer, #Menu {
 	text-align: center;
 	font-size: large;
 }
-
+h1{
+	background-color:#CCCCCC;
+}
+div.menuR {
+	text-align: right;
+	font-size: large;
+}
