@@ -32,7 +32,7 @@ class HomeController extends Controller
     }
     
     public function logout(){
-        $this->render('app/logout.php');
+        $this->render('logout.php');
     }
 
     public function bt1(){

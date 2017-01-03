@@ -1,6 +1,6 @@
 <?php
 class User {
-	private $dbHost     = "127.0.0.1";
+	private $dbHost     = "localhost";
     private $dbUsername = "root";
     private $dbPassword = "";
     private $dbName     = "eventos_coordinados";
