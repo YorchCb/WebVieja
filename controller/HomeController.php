@@ -24,27 +24,19 @@ class HomeController extends Controller
     }
 
     public function home(){
-        $this->render('home.php.twig');
-    }
-
-     public function login(){
-        $this->render('login.php');
-    }
-    
-    public function logout(){
-        $this->render('logout.php');
+        $this->render('home.html.twig');
     }
 
     public function bt1(){
-        $this->render('bt1.php.twig');
+        $this->render('bt1.html.twig');
 	}
 
     public function bt4(){
-        $this->render('bt4.php.twig');
+        $this->render('bt4.html.twig');
     }
 
     public function gtav(){
-        $this->render('gtav.php.twig');
+        $this->render('gtav.html.twig');
     }
 
 }

@@ -47,15 +47,6 @@ if(!$fbUser){
 		$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
 	}
 }
+dump_var($output);
+echo $output;
 ?>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-h1{font-family:Arial, Helvetica, sans-serif;color:#999999;}
-</style>
-</head>
-<body>
-<div><?php echo $output; ?></div>
-</body>
-</html>
