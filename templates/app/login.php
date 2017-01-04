@@ -6,7 +6,7 @@ require_once 'User.php';
 if(!$fbUser){
 	$fbUser = NULL;
 	$loginURL = $facebook->getLoginUrl(array('redirect_uri'=>$redirectURL,'scope'=>$fbPermissions));
-	$output = '<a href="'.$loginURL.'">Logearse </a>'; 	
+	echo '<a href="'.$loginURL.'">Logearse</a>'; 	
 }else{
 	//Get user profile data from facebook
 	$fbUserProfile = $facebook->api('/me?fields=id,first_name,last_name,email,link,gender,locale,picture');
@@ -33,19 +33,9 @@ if(!$fbUser){
 	
 	//Render facebook profile data
 	if(!empty($userData)){
-	/*	$output = '<h1>Facebook Profile Details </h1>';
-		$output .= '<img src="'.$userData['picture'].'">';
-        $output .= '<br/>Facebook ID : ' . $userData['oauth_uid'];
-        $output .= '<br/>Name : ' . $userData['first_name'].' '.$userData['last_name'];
-        $output .= '<br/>Email : ' . $userData['email'];
-        $output .= '<br/>Gender : ' . $userData['gender'];
-        $output .= '<br/>Locale : ' . $userData['locale'];
-        $output .= '<br/>Logged in with : Facebook'; 
-		$output .= '<br/><a href="'.$userData['link'].'" target="_blank">Click to Visit Facebook Page</a>';*/
-        $output .= '<br/> <a href="logout.php">Desloguear</a> / <a href="">Panel de usuario</a>'; 
+        echo '<a href="logout.php">Desloguear</a> / <a href="">Panel de usuario</a>'; 
 	}else{
-		$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
+		echo '<h3 style="color:red">Un problema ocurrio, por favor intente de nuevo.</h3>';
 	}
 }
-echo $output;
 ?>
