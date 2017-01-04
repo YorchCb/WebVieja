@@ -47,6 +47,5 @@ if(!$fbUser){
 		$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
 	}
 }
-dump_var($output);
 echo $output;
 ?>
