@@ -33,7 +33,7 @@ if(!$fbUser){
 	
 	//Render facebook profile data
 	if(!empty($userData)){
-        echo '<a href="logout.php">Desloguear</a> / <a href="">Panel de usuario</a>'; 
+        echo '<a href="./?action=logout">Desloguear</a> / <a href="./?action=">Panel de usuario</a>'; 
 	}else{
 		echo '<h3 style="color:red">Un problema ocurrio, por favor intente de nuevo.</h3>';
 	}

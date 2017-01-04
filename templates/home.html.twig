@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<title>Home</title>
-		{% include ('head.html.twig') %}
+		{% include ('includes/head.html.twig') %}
 	</head>
 	 <div class="container">
 	 	<body>
@@ -18,7 +18,7 @@
 						<a href="./?action=qs"> Lista de eventos </a> /
 						<a href="https://www.youtube.com" target="_blank"> YouTube </a> /
 						<a href="./?action=razer"> RazerComms </a> /
-						{% include ('app/login.php') %}
+						{% include ('includes/menu_session.html.twig') %}
 					</section>
 			</header>
 					<section id="Juegos">
@@ -40,10 +40,10 @@
 							<br>
 						</article>
 				</section>
-				{% include ('endbody.html.twig') %}
+				{% include ('includes/endbody.html.twig') %}
 		</body>
 		<footer class="col-xs-12">
-			{% include ('footer.html.twig') %} 
+			{% include ('includes/footer.html.twig') %} 
 		</footer>
 	</div>
 </html>

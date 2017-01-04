@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<title>Gta V</title>
-		{% include ('head.html.twig') %}
+		{% include ('includes/head.html.twig') %}
 	</head>
 	 <div class="container">
 	 	<body>
@@ -11,7 +11,7 @@
 					<section id="Top" class="col-xs-12">
 						<h1>
 							<img src="images/GtavLogo.png" class="img-responsive" >
-							<div class="menuR">{% include ('menu_session.html.twig') %}</div>
+							<div class="menuR">{% include ('includes/menu_session.html.twig') %}</div>
 						</h1>	
 					</section>
 					<section id="Menu" class="col-xs-12">
@@ -49,11 +49,11 @@
 						<div class="col-xs-3 col-sm- col-md-3 col-lg-">
 							Publicidad
 						</div >
-						{% include ('endbody.html.twig') %}
+						{% include ('includes/endbody.html.twig') %}
 				</section>
 		</body>
 		<footer class="col-xs-12">
-			{% include ('footer.html.twig') %} 
+			{% include ('includes/footer.html.twig') %} 
 		</footer>
 	</div>
 </html>
