@@ -12,7 +12,7 @@ $dbParams = array(
     'driver'  => 'localhost',
     'user'   => 'root',
     'password' => '',
-    'dbname'  => 'database',
+    'dbname'  => 'eventos_coordinados',
 );
 
 // Any way to access the EntityManager from your application
