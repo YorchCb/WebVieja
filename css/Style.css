@@ -12,17 +12,32 @@ h1{
 }
 
 h2{
-	text-align: left;
+	text-align: center;
 	font-size: large;
 }
 
 h3{
-	text-align: right;
+	text-align: center;
+	font-size: medium;
+}
+
+h4{
+	text-align: center;
 	font-size: large;
 }
 
+h5{
+	display:inline-block;
+}
 div.menuR {
 	text-align: right;
 	font-size: large;
+}
+#open_close{
+	background: #000;
+	font-size: medium;
+	color: #fff;
+	border-style: solid;
+
 }
 
