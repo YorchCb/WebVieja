@@ -45,17 +45,18 @@ div.menuR {
 	font-size: medium;
 }
 
-#albunes{
+#albunes, #fotos-albunes{
 	overflow-x: scroll;
     overflow-y: hidden;
     height: 150px;
     white-space:nowrap;
     display: inline-block;
 }
+
 #miniaturas{
 	overflow-x: scroll;
     overflow-y: hidden;
-    height: 150px;
+    height: 120px;
     white-space:nowrap;
     display: inline-block;
 }
