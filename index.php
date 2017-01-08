@@ -18,6 +18,8 @@ if(isset($_GET['action']) and $_GET['action'] != 'home') {
  		HomeController::getInstance()->bt4();}
  	if($_GET["action"]=="gtav"){
  		HomeController::getInstance()->gtav();}
+ 	if($_GET["action"]=="galeriagtav"){
+ 		HomeController::getInstance()->galeriagtav();}
 }else{
     HomeController::getInstance()->home();
 }

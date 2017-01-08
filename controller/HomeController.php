@@ -39,4 +39,9 @@ class HomeController extends Controller
         $this->render('gtav.html.twig');
     }
 
+        public function galeriagtav(){
+        $this->render('galeriagtav.html.twig');
+    }
+
+
 }

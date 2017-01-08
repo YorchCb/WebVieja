@@ -17,7 +17,7 @@ h2{
 }
 
 h3{
-	display: inline-block;;
+	display: inline-block;
 }
 
 h4{
@@ -43,4 +43,19 @@ div.menuR {
 #fuente{
 	text-align: center;
 	font-size: medium;
+}
+
+#albunes{
+	overflow-x: scroll;
+    overflow-y: hidden;
+    height: 150px;
+    white-space:nowrap;
+    display: inline-block;
+}
+#miniaturas{
+	overflow-x: scroll;
+    overflow-y: hidden;
+    height: 150px;
+    white-space:nowrap;
+    display: inline-block;
 }

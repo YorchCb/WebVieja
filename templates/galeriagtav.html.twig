@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Galería multimedia</title>
+		{% include ('includes/head.html.twig') %}
+	</head>
+	 <div class="container">
+	 	<body>
+			<header>
+				<section class="main row">
+					<section id="Top" class="col-xs-12">
+						<h1>
+							<img src="images/GtavLogo.png" class="img-responsive" >
+							<div class="menuR"><a href="index2.php">Login</a></div>
+						</h1>	
+					</section>
+					<section id="Menu" class="col-xs-12">
+						<a href="./?action=home"> Inicio </a> /
+						<a href=""> Eventos formales </a> /
+						<a href="./?action=qs"> Miembros y estadísticas</a> /
+						<a href="" target="_blank"> Crew </a> /
+						<a href="./?action=razer"> Notas e inscripciones </a> /
+						<a href=".?action=gtav">Volver</a>
+					</section>
+			</header>
+				<b style="font-size: large;">Biblioteca Multimedia</b>
+				<div id="fotos" class="col-xs-12">
+					<b style="font-size: large;">Fotos</b>
+					<br>
+					<div id="albunes" class="col-xs-12">
+						<img src="images/galeria-multimedia/albunes/expo.jpg" width="150px" height="150px" onclick="">
+						<img src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px" onclick="">
+					</div>
+					<div id="fotos-albunes" class="col-xs-12"">
+						<a href=""><img src=""></a>
+						<a href=""><img src=""></a>
+					</div>
+					<div id="visor" class="col-xs-12">
+						<img src="">
+					</div>
+				</div>
+				<div id="videos" class="col-xs-12">
+					<b style="font-size: large;">Videos</b>
+					<br>
+					<div id="miniaturas">
+						<a href="https://www.youtube.com/v/gOgpdp3lP8M" onclick="return cambio(this.href)"><img src="http://i3.ytimg.com/vi/9WbCfHutDSE/default.jpg"></a>
+						<a href="https://www.youtube.com/v/7qFF2v8VsaA" onclick="return cambio(this.href)"><img src="http://i3.ytimg.com/vi/7qFF2v8VsaA/default.jpg"></a>
+					</div>
+					<div id="contenedor">
+
+					</div>
+				</div>
+				{% include ('includes/endbody.html.twig') %}
+				</section>
+		</body>
+		<footer class="col-xs-12">
+			{% include ('includes/footer.html.twig') %} 
+		</footer>
+	</div>
+</html>
