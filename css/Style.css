@@ -55,7 +55,8 @@ div.menuR {
 }
 
 #fotos-albunes{
-	height: 150px;
+	margin-top: 20px;
+	height: 360px;
 	overflow: auto;
 }
 
