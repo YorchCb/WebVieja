@@ -28,6 +28,7 @@ h4{
 h5{
 	display:inline-block;
 }
+
 div.menuR {
 	text-align: right;
 	font-size: large;
@@ -54,9 +55,9 @@ div.menuR {
     display: inline-block;
 }
 
-#fotos-albunes{
+#fotos-albunes, #miniaturas{
 	margin-top: 20px;
-	height: 360px;
+	height: 480px;
 	overflow: auto;
 }
 
@@ -64,7 +65,7 @@ div.menuR {
 	margin-top: 20px;
 }
 
-#miniaturas{
+{
 	margin-top: 20px;
 	overflow-x: scroll;
     overflow-y: hidden;
