@@ -1,44 +1,14 @@
 <div id="fotos" class="col-xs-12">
 	<b style="font-size: large;">Fotos</b>
 	<br>
-	<div id="albunes" class="col-xs-12">
-		<img onclick="var albun=1; function update;" src="images/galeria-multimedia/albunes/expo.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
-		<img onclick="var albun=2" src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px">
+	<div id="albumes" class="col-xs-12">
+		{% include ('includes/albumesgtav.html.twig') %}
 	</div>
 	<div id="visor" class="col-xs-8">
 		<center><img id="ver" src="images/galeria.png" width="720" height="480"></center>
 	</div>
-	<div id="fotos-albunes" class="col-xs-4">
-		<div id="expo">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo2.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo.jpg"  width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo.jpg'">
-			<img src="images/galeria-multimedia/albunes/expo2.jpg" width="150px" height="150px" onclick="document.getElementById('ver').src='images/galeria-multimedia/albunes/expo2.jpg'">
-		</div>
+	<div id="fotos-albumes" class="col-xs-4">
+		{% include ('includes/fotosgtav.html.twig') %}
 	</div>
 </div>
 <div id="videos" class="col-xs-12">
